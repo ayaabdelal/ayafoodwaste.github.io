@@ -1,0 +1,287 @@
+@font-face { 
+font-family: 'Rubik', sans-serif;
+	src: url("font/Rubik/Rubik-VariableFont_wght.ttf") format("ttf");
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	margin: 0px;
+	overflow: hidden;
+
+}
+
+.header {
+	height: 107px;
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	background: #000000;
+	width: 100%;
+	top: 0px;
+}
+
+.headerText {
+	color: #ffffff;
+	width: 70%;
+	display: flex;
+	align-items: center;
+}
+
+.headerImage {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end; 
+	align-items: center;
+	height: 107px;
+	background-color: #3199CC;
+	padding-right: 20px;
+}
+
+.header img {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.header h5 {
+	padding-left: 100px;
+	font-family: 'Helvetica';
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+}
+
+.title h1 {
+	width: 70%;
+}
+
+.titleText {
+/* Global food waste is a cross-cutting issue that starts during agricultural production and continues all of the way to the landfill. Over 30% of food is lost or wasted each year. This number is even more striking, given the large number of hungry people in the world. Wasted food is not only inefficient, it’s a social justice issue. */
+
+	width: 30%;
+	background-color: #3199CC;
+	font-family: 'Helvetica-Light';
+	font-size: 24px;
+	color: #ffffff;
+	padding-right: 24px;
+	padding-left: 30px;
+	padding-top: 100px;
+	line-height: 35px;
+	font-weight: 400;
+	object-position: center;
+} 
+.titleText u {
+	text-decoration-line: underline;
+	text-decoration-thickness:2px ;
+}
+
+h1 {
+/* Global food waste */
+	font-family: 'Rubik';
+	font-weight: 900;
+	font-size: 250px;
+	line-height: 219px;
+	color: #000000;
+	letter-spacing: 3.75px;
+	padding-top: 35px;
+	padding-bottom: 70px;
+	padding-left: 50px;
+
+}
+
+hr {
+/* black rect under title */
+	border: 0;
+	border-top: 107px solid #000000;
+}
+
+h4 {
+/* What is food waste? */
+	font-family: 'Helvetica';
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 70px;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.what {
+	margin-bottom: 250px;
+}
+
+.whatwaste {
+	/* Food “waste” refers to food that is fit for consumption but consciously discarded at the retail or consumption phases*/
+	font-family: 'Helvetica';
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 60px;
+	text-align: center;
+	color: #000000;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.seem {
+	background-color: #3199CC;
+	background-image: url("images/circles.png");
+	background-size: 30%;
+	background-repeat: repeat-x;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+}
+
+.seem p {
+	width: 70%;
+	padding: 100px 500px 100px 100px;
+	font-family: 'Helvetica';
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 40px;
+	color: #ffffff;
+	
+}
+.seem p u {
+	text-decoration-line: underline;
+	text-decoration-thickness:2px ;
+}
+
+.donut {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px 100px 0px 50px;
+}
+
+.donut img {
+	width: 70%;
+	aspect-ratio: auto;
+}
+
+.Billion {
+	background-color: #000000;
+	background-image: url("images/drip.png");
+	background-size: 15%;
+	background-repeat: no-repeat;
+	background-position: 87% 0%;
+	padding-left: 100px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.Billion h3 {
+	width: 50%;
+	font-family: 'rubik';
+	font-weight: 900;
+	font-size: 100px;
+	line-height: 90px;
+	color: #ffffff;
+	padding-bottom: 50px;	
+
+}
+
+.statistics {
+	width: 40%;
+	font-family: 'Helvetica';
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 74px;
+	color: #ffffff;	
+}
+
+.byCountry {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 200px;
+
+}
+
+.byCountry h3{
+	font-family: 'rubik-black';
+	font-weight: 700;
+	font-size: 90px;
+	line-height: 90px;
+	text-align: center;
+	width: 590px;
+	padding-bottom: 100px;
+
+}
+
+.byCountry img {
+	width: 80%;
+}
+
+hr{
+	padding-bottom: 200px;
+}
+.onePlanet h4{
+
+	line-height: 80px;
+	text-align: center;
+	font-size: 90px;
+	padding-bottom: 200px;
+	width: 100%;
+
+}
+
+/*droppedimages*/
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .headerImage {
+	cursor: pointer;
+  }
+  
+  .dropped-image {
+	position: fixed;
+	bottom: 0;
+	left: 50%; /* Initial left position (centered horizontally) */
+	transform: translateX(-50%) translateY(0); /* Initial vertical position */
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.5s; /* Transition for drop animation */
+	z-index: 1;
+	width: 10%;
+  }
+  
+  /* Stack images using translateY transform */
+  .dropped-image.stacked {
+	z-index: 0; /* Move stacked images to a lower z-index */
+  }
+  
+  .dropped-image.stacked:nth-child(1) {
+	transform: translateX(-50%) translateY(-200%); /* Spacing between stacked images */
+  }
+  
+  .dropped-image.stacked:nth-child(2) {
+	transform: translateX(-50%) translateY(-150%);
+  }
+  
+  .dropped-image.stacked:nth-child(3) {
+	transform: translateX(-50%) translateY(-100%);
+  }
+  @keyframes dropAnimation {
+	0% {
+	  top: 0;
+	}
+	100% {
+	  top: 100%;
+	}
+  }
